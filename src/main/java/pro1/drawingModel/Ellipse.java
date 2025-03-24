@@ -2,18 +2,12 @@ package pro1.drawingModel;
 
 import java.awt.*;
 
-public class Ellipse implements Drawable {
-    private int x;
-    private int y;
-    private int width;
-    private int height;
+public class Ellipse extends WidthHeightShape {
+
     private String color; // Např.#FF56A1
 
     public Ellipse(int x, int y, int width, int height, String color) {
-        this.x = x;
-        this.y = y;
-        this.width = width;
-        this.height = height;
+        super(x,y,height,width);
         this.color = color;
     }
 

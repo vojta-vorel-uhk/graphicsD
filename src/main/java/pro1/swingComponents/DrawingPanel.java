@@ -22,4 +22,10 @@ public class DrawingPanel extends JPanel {
         g.drawLine(0,-5000,0,5000);
         image.draw((Graphics2D)g);
     }
+
+    public void setImage(Drawable image)
+    {
+        this.image = image;
+        repaint();
+    }
 }
